@@ -721,7 +721,7 @@ h4.ped__info__more__list__header {
 }
 
 .footer {
-	background: rgb(0,0,0);
+	background: #4b4b4b;
 }
 
 .prtners img {
@@ -735,7 +735,7 @@ h4.ped__info__more__list__header {
 
 .prtners a {
 	margin: 0 5px;
-	opacity: .75;
+	opacity: .50;
 	transition: all 300ms ease;
 }
 
