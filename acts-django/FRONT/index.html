@@ -1,105 +1,324 @@
-<!DOCTYPE html>
-<html lang="uk">
-<title>Кафедра АУТС</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="favicon.ico">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="aboutstyle.css">
+<!DOCTYPE html> 
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">  
+  <title>АУТС</title>
+    <link rel="icon" href="img/favicon.ico">
+</head>
+
 <body>
+  <div class="wrapper">
+      
+                                <!-- HEADER -->
+    <div class="header">
+      <div class="row">
+        <menu class="header__menu">
+          <ul>
+            <a href="" class="header__menu__a_logo">
+              <img class="header__menu__logo" src="img/logo.png">
+            </a>
+          </ul>
+          <ul>
+            <a href="">Абітурієнтам</a>
+          </ul>
+          <ul>
+            <a href="">Студентам</a>
+          </ul>
+          <ul>
+            <a href="">Розробки</a>
+          </ul>
+            <ul>
+            <a href="">Наука</a>
+          </ul>
+        </menu>
+        <div class="header__right medium-2 columns search__wrapper out">
+          <li class="ul langs">
+            <ul><a href='/?lang=ua' class="lang__active">ua</a></ul>
+            <ul><a href='/?lang=en'>en</a></ul>
+          </li>
+            
+                                <!-- Search area -->
+          <form method="get" action="" class="header__search">
+            <input type="text" class="input_text" name="search">
+            <input type="submit" class="header__search__button">
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- END Header -->
+      
+                                <!-- SLIDER --> 
+    <div class="slider">
+      <li class="slider__slider">
+        <ul>
+          <div class="slider__slide" style="background-image: url('img/slide1.jpg');">
+            <div class="slider__slide__content">
+              <div class="row slider__slide__content__row">
+                <h1 class="slider__header">
+                  Сучасна <span class="slider__header__higlight"> матеріальна </span>
+                  база
+                 </h1>
+              </div>
+            </div>
+          </div>
+        </ul>
+        <ul>
+          <div class="slider__slide" style="background-image: url('img/slide2.jpg');">
+            <div class="slider__slide__content">
+              <div class="row slider__slide__content__row">
+                <h1 class="slider__header">
+                  Одна з <span class="slider__header__higlight"> найкращих </span>
+                  кафедр КПІ
+                </h1>
+              </div>
+            </div>
+          </div>
+        </ul>
+        <ul>
+          <div class="slider__slide" style="background-image: url('img/slide3.jpg');">
+            <div class="slider__slide__content">
+              <div class="row slider__slide__content__row">
+                <h1 class="slider__header">
+                  Ґрунтовна
+                  <span class="slider__header__higlight"> освіта</span> та гарна робота
+                </h1>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </li>
+      <div class="row">
+        <li class="slider__circles"></li>
+      </div>
+    </div>
+                                <!-- END Slider -->
+      
+      
+                                <!-- BODY START -->
+    <!-- Sidebar -->
+    <div class="content row medium-3 columns s">     
+    <!-- Social Networks -->
+        
+    <sidebar class="content__sidebar">
+        <div class="social__holder">
+            
+          <h2 class="content__sidebar__block__header">Ми у соціальних мережах</h2>
+            <ul>
+                <li><a class="w3-btn w3-indigo w3-round-medium" href="https://www.facebook.com/actskpi" target="_blank">Facebook</a></li>
+                <li><a class="w3-btn w3-blue-grey w3-round-medium" href="https://vk.com/actskpi" target="_blank">VK</a></li>
+           </ul>
+        </div>    
+                            
+                                <!-- INFORMATION -->   
+      <sidebar class="content__sidebar">
+        <div class="content__sidebar__block ">
+          <h2 class="content__sidebar__block__header">Інформація</h2>
+          <ul class="sidebar__nav">
+            <li>
+              <a href="" class="sidebar__nav__btn">Про кафедру</a>
+            </li>
+            <li>
+              <a href="" class="sidebar__nav__btn">Історія кафедри</a>
+            </li>
+            <li>
+              <a href="teachstaff.html" class="sidebar__nav__btn">Педагогічний склад</a>
+            </li>
+            <li>
+              <a href="" class="sidebar__nav__btn">Допоміжний персонал</a>
+            </li>
+            <li>
+              <a href="" class="sidebar__nav__btn">Студентське життя</a>
+            </li>
+            <li>
+              <a href="" class="sidebar__nav__btn">Вступнику 2017-го</a>
+            </li>  
+          </ul>
+        </div>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <ul class="w3-navbar w3-light-blue w3-card-2 w3-left-align w3-large">
-    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
-      <a class="w3-padding-large w3-hover-white w3-large w3-light-blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    </li>
-    <li><a href="#" class="w3-padding-large w3-white w3-hover-shadow">АУТС</a></li>
-    <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Абітурієнтам</a></li>
-    <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Студентам</a></li>
-    <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Розробки</a></li>
-    <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Наука</a></li>
-  </ul>
+      <div class="content__sidebar__block">
+          <h2 class="content__sidebar__block__header ">Контакти</h2>
+          <table class="sidebar__contacts" cellspacing="0">
+            <tbody>
+              <!-- Contact -->
+              <tr>
+                <td>
+                  <span class="sidebar__contacts__icon">
+                    <img src="img/home.png">
+                  </span>
+                </td>
+                <td>
+                  <span class="span">
+                    Місто Київ, проспект Перемоги 37, 18 корпус
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="sidebar__contacts__icon">
+                    <img src="img/phone.png">
+                  </span>
+                </td>
+                <td>
+                  <span class="span">
+                    +380 (44) 204 86 10<br>
+                    +380 (44) 204 92 85
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="sidebar__contacts__icon">
+                    <img src="img/at.png">
+                  </span>
+                </td>
+                <td>
+                  <span class="span">
+                    kafedra@acts.kpi.ua
+                  </span>
+                </td>
+              </tr>
+              <!-- End Contact -->
+            </tbody>
+          </table>
+        </div>
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-hover-shadow">
-    <ul class="w3-navbar w3-left-align w3-large w3-black">
-      <li><a class="w3-padding-large" href="#">Абітурієнтам</a></li>
-      <li><a class="w3-padding-large" href="#">Студентам</a></li>
-      <li><a class="w3-padding-large" href="#">Розробки</a></li>
-      <li><a class="w3-padding-large" href="#">Наука</a></li>
-    </ul>
+        <div class="content__sidebar__block">
+          <h2 class="content__sidebar__block__header">Останні новини</h2>
+          <div class="sidebar__news">
+              
+                                <!-- NEWS -->
+            {% for new in news %}
+            <a class="sidebar__news__news" href="">
+              <h3 class="sidebar__news__news__header">
+                Lorem Ipsum
+              </h3>
+                <p>Lorem ipsum dolor sit amet, nisl dictas deleniti nam ea, vim blandit repudiare ne. Vel eu equidem dignissim dissentias, cibo sonet mel ne. Quodsi aperiri adipiscing no pri. At vix munere gubergren.</p>
+              <span class="sidebar__news__news__date">01.01.1970</span>
+            </a>     
+            {% endfor %}
+          </div>
+                                <!-- END News -->
+        </div>
+
+      </sidebar></sidebar>
+      <!-- END Sidebar  -->
+                                
+        
+                                <!-- CONTENT -->
+      <div class="content__content">
+        <section class="advantages">
+          <div class="advantages_adv">
+            <img src="img/graduate.png" alt="Сучасні освітні програми">
+            <h2>Сучасні освітні програми</h2>
+            <p>
+              Розроблені відповідно до сучасних потреб ринку праці. Отримання високооплачуваної роботи гарантовано.
+            </p>
+          </div>
+
+          <div class="advantages_adv">
+            <img src="img/person.png" alt="Сучасні освітні програми">
+            <h2>Професорсько-викладацький склад</h2>
+            <p>
+              Висококваліфіковані викладачі кафедри мають значний досвід і в той самий час середній вік не перевищує 45 років.
+            </p>
+          </div>
+
+          <div class="advantages_adv">
+            <img src="img/screen.png" alt="Сучасні освітні програми">
+            <h2>Матеріально-технічна база</h2>
+            <p>
+              Лабораторії та комп’ютерні класи побудовані у співпраці з провідними ІТ-компаніями та оснащені найсучаснішою технікою та обладнанням.
+            </p>
+          </div>
+        </section>
+        <section> 
+          <a href="http://www.iconfs.net/w.infocom2016" target="_blank" class="banner-img">
+            <img src="http://acts.kpi.ua/app/uploads/2015/07/Banner.jpg" alt="">
+          </a>
+        </section>
+        
+        <section>
+          <!-- {% for c in cath  %} -->
+          <h1 class="header-with-line">
+            <!-- {{c.title}} New's title-->
+              Чорна рада
+          </h1>
+          <!-- Picture from DB
+          <div class="section__image" style="
+          background-image: url('{{c.img_field}}')"></div> -->
+          <div class="section__image" style="
+          background-image: url('http://bm.img.com.ua/nxs/img/prikol/images/large/3/2/281323_682087.jpg')"></div>  
+          <p>
+           <!-- {{c.description}} The content of article -->
+По весні 1663 року двоє подорожніх, верхи на добрих конях, ізближались до Києва з Білогородського шляху. Один був молодий собі козак, збройний, як до війни; другий по одежі і по сивій бороді, сказать би, піп, а по шаблюці під рясою, по пістолях за поясом і по довгих шрамах на виду — старий "козарлюга". Коні в їх потомлені, одежа й тороки позапилювані: зараз було знати, що ідуть не зблизька.
+Не доїздячи верстов зо дві чи зо три до Києва, взяли вони у ліву руку да й побрались гаєм, по кривій доріжці. І хто тільки бачив, як вони з поля повернули в гай, усяке зараз домислялось, куди вони простують. Крива доріжка вела до Череваневою хутора, Хмарища. А Черевань був тяжко грошовитий да й веселий пан із козацтва, що збагатилось за десятилітню рійну з ляхами. Річ тут про Богдана Хмельницького, як він років з десяток шарпав з козаками шляхетних ляхів і недоляшків. От тоді-то й Черевань доскочив собі незчисленного скарбу, та після війни й сів хутором коло Києва.
+          </p>
+         <!-- {% endfor %} -->
+        </section>
+        <section>
+          <h1 class="header-with-line">
+            Новини
+          </h1>
+          <!-- the same logic -->
+          <!-- {% for new in news %} -->
+          <div class="news">
+            <a class="news__news" href="">
+              <!-- <div class="news__news__img-wrap">
+                <img src="{{new.img_field}}" alt="">
+              </div> -->
+                <div class="news__news__img-wrap">
+                <img src="https://68.media.tumblr.com/2f75811a6da2f2212e2bfb96c440658e/tumblr_mtzi7wGsPH1rupho9o1_1280.jpg" alt="">
+              </div>
+              <h3 class="news__news__header">
+               <!-- {{new.title}} --> Michelangelo
+              </h3>
+              <span class="news__news__date">
+               <!-- {{new.published_date}} --> Year 1512 
+              </span>
+            </a>
+          <!-- {% endfor %} -->
+          </div>
+        </section>
+      </div>
+    </div>    
+      <!-- END Content -->
+
+        
+        
+                                <!-- FOOTER -->
+    
+    <footer class="footer">
+      <div class="footer__left">
+        <h1>Нашi партнери</h1>
+        <div class="prtners">
+          <a href="http://microsoft.com" target="_blank">
+            <img src="img/microsoft.png" alt="">
+          </a>
+          <a href="http://www.ti.com" target="_blank">
+            <img src="img/texas.png" alt="">
+          </a>
+          <a href="http://www.cisco.com" target="_blank">
+            <img src="img/cisco.png" alt="">
+          </a>
+          <a href="http://www.atmel.com" target="_blank">
+            <img src="img/atmel.png" alt="">
+          </a>
+        </div>
+      </div>
+        
+                                <!-- Contacts -->
+      <div class="footer__contacts">
+        <p>
+          &copy; ACTS | +380 (44) 204 86 10 | +380 (44) 204 92 85 | kafedra@acts.kpi.ua 
+        </p>
+      </div>
+    </footer>
+                                <!-- END Contacts -->
+
+    <!-- END Footer -->
   </div>
-</div>
-
-<!-- Header #acts -->
-<div class="w3-container">
-    <div class="header-logo"></div>
-</div>
-
-<!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-
-    <div class="w3-third w3-center">
-      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
-    </div>
-  </div>
-</div>
-
-<!-- Second Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third w3-center">
-      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
-    </div>
-
-    <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>
-</div>
-
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
-  <div class="w3-xlarge w3-padding-32">
-   <a href="#" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
-   <a href="#" class="w3-hover-text-red"><i class="fa fa-pinterest-p"></i></a>
-   <a href="#" class="w3-hover-text-light-blue"><i class="fa fa-twitter"></i></a>
-   <a href="#" class="w3-hover-text-grey"><i class="fa fa-flickr"></i></a>
-   <a href="#" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
- </div>
-</footer>
-
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
-
+  <script src="js/script.js"></script>
 </body>
-</html>
