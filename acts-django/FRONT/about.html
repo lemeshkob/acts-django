@@ -1,133 +1,330 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <title>Кафедра АУТС</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Про кафедру</title> <!-- c.page_title (for example) -->
+    <html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="icon" href="img/favicon.ico">
 </head>
 <body>
-
-                                            <!-- NAVBAR -->
-<div class="w3-top" id="navbar">
-  <ul class="w3-navbar w3-dark-grey w3-card-2 w3-large">
-      <!-- -->
-    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right"><a class="w3-padding-large w3-hover-white w3-large w3-light-blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    </li>
-    <li><a href="#" class="w3-padding-large w3-white w3-text-light-blue">#acts</a></li>
-    <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Абітурієнтам</a></li>
-    <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Студентам</a></li>
-    <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Розробки</a></li>
-    <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Наука</a></li>
-
-      <!-- Localization switch -->
-      <li class="w3-hide-small"><div class="w3-dropdown-hover w3-white">
-          <a href="#" class="w3-padding-medium w3-white w3-text-light-blue"><i class="fa fa-globe w3-hide-small"></i></a>
-          <div class="w3-dropdown-content">
-              <a href="#" class="w3-padding-large w3-hover-light-grey">uk</a>
-              <a href="#" class="w3-padding-large w3-hover-light-grey">en</a>
-          </div>
-      </div>
-    </li>
-    <div id="site-search">
-      <li class="w3-hide-small">
-          <form>
-              <input type="text" name="search" placeholder="Пошук...">
-              <div id="search-icon"><input type="submit" value=""></div>
+    <div class="wrapper">
+             
+                                <!-- HEADER -->
+    <div class="header">
+      <div class="row">
+        <menu class="header__menu">
+          <ul>
+            <a href="index.html" class="header__menu__a_logo">
+              <img class="header__menu__logo" src="img/logo.png">
+            </a>
+          </ul>
+          <ul>
+            <a href="">Абітурієнтам</a>
+          </ul>
+          <ul>
+            <a href="">Студентам</a>
+          </ul>
+          <ul>
+            <a href="">Розробки</a>
+          </ul>
+            <ul>
+            <a href="">Наука</a>
+          </ul>
+        </menu>
+        <div class="header__right medium-2 columns search__wrapper out">
+          <li class="ul langs">
+            <ul><a href='/?lang=ua' class="lang__active">ua</a></ul>
+            <ul><a href='/?lang=en'>en</a></ul>
+          </li>
+            
+                                <!-- Search area -->
+          <form method="get" action="" class="header__search">
+            <input type="text" class="input_text" name="search">
+            <input type="submit" class="header__search__button">
           </form>
-      </li>
-    </div>
-    </ul>
-
-      <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-hover-shadow">
-    <ul class="w3-navbar w3-left-align w3-large w3-black">
-      <li><a class="w3-padding-large" href="#">Абітурієнтам</a></li>
-      <li><a class="w3-padding-large" href="#">Студентам</a></li>
-      <li><a class="w3-padding-large" href="#">Розробки</a></li>
-      <li><a class="w3-padding-large" href="#">Наука</a></li>
-        <li class="w3-hide-small"><div class="w3-dropdown-hover w3-white">
-          <a href="#" class="w3-padding-medium w3-white w3-text-light-blue"><i class="fa fa-globe w3-hide-small"></i></a>
-          <div class="w3-dropdown-content">
-              <a href="#" class="w3-padding-large w3-hover-light-grey">uk</a>
-              <a href="#" class="w3-padding-large w3-hover-light-grey">en</a>
-          </div>
+        </div>
       </div>
-    </li>
-    </ul>
-  </div>
-</div>
-                                            <!-- END NAVBAR -->
-
-
-      <!-- Header #acts -->
-<div class="w3-container">
-    <div>
-    <div id="main-banner">
-      <img src="img/actsheader2.png" alt="#actslogo">
     </div>
-</div>
-
-<!-- Про кафедру -->
-<div class="w3-row-padding w3-padding-28 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>Про кафедру</h1>
-      <p class="w3-text-black">Однією з провідних кафедр України, діяльність випускників яких пов’язана з інформатизацією, є кафедра Автоматики та Управління в Технічних Системах (АУТС) факультету Інформатики та Обчислювальної Техніки Національного Технічного Університету України “Київський політехнічний інститут імені Ігоря Сікорського”.</p>
+    <!-- END Header -->
+      
+                                <!-- SLIDER --> 
+    <div class="slider">
+      <li class="slider__slider">
+        <ul>
+          <div class="slider__slide" style="background-image: url('img/slide1.jpg');">
+            <div class="slider__slide__content">
+              <div class="row slider__slide__content__row">
+                <h1 class="slider__header">
+                  Сучасна <span class="slider__header__higlight"> матеріальна </span>
+                  база
+                 </h1>
+              </div>
+            </div>
+          </div>
+        </ul>
+        <ul>
+          <div class="slider__slide" style="background-image: url('img/slide2.jpg');">
+            <div class="slider__slide__content">
+              <div class="row slider__slide__content__row">
+                <h1 class="slider__header">
+                  Одна з <span class="slider__header__higlight"> найкращих </span>
+                  кафедр КПІ
+                </h1>
+              </div>
+            </div>
+          </div>
+        </ul>
+        <ul>
+          <div class="slider__slide" style="background-image: url('img/slide3.jpg');">
+            <div class="slider__slide__content">
+              <div class="row slider__slide__content__row">
+                <h1 class="slider__header">
+                  Ґрунтовна
+                  <span class="slider__header__higlight"> освіта</span> та гарна робота
+                </h1>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </li>
+      <div class="row">
+        <li class="slider__circles"></li>
+      </div>
     </div>
+                                <!-- END Slider -->
+      
+      
+                                <!-- BODY START -->
+    <!-- Sidebar -->
+    <div class="content row medium-3 columns s">     
+    <!-- Social Networks -->
+        
+    <sidebar class="content__sidebar">
+        <div class="social__holder">
+            
+          <h2 class="content__sidebar__block__header">Ми у соціальних мережах</h2>
+            <ul>
+                <li><a class="w3-btn w3-indigo w3-round-medium" href="https://www.facebook.com/actskpi" target="_blank">Facebook</a></li>
+                <li><a class="w3-btn w3-blue-grey w3-round-medium" href="https://vk.com/actskpi" target="_blank">VK</a></li>
+           </ul>
+        </div>    
+                            
+                                <!-- INFORMATION -->   
+      <sidebar class="content__sidebar">
+        <div class="content__sidebar__block ">
+          <h2 class="content__sidebar__block__header">Інформація</h2>
+          <ul class="sidebar__nav">
+            <li>
+              <a href="about.html" class="sidebar__nav__btn">Про кафедру</a>
+            </li>
+            <li>
+              <a href="" class="sidebar__nav__btn">Історія кафедри</a>
+            </li>
+            <li>
+              <a href="teachstaff.html" class="sidebar__nav__btn">Педагогічний склад</a>
+            </li>
+            <li>
+              <a href="" class="sidebar__nav__btn">Допоміжний персонал</a>
+            </li>
+            <li>
+              <a href="" class="sidebar__nav__btn">Студентське життя</a>
+            </li>
+            <li>
+              <a href="" class="sidebar__nav__btn">Вступнику 2017-го</a>
+            </li>  
+          </ul>
+        </div>
 
-    <div class="w3-third w3-center">
-      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+      <div class="content__sidebar__block">
+          <h2 class="content__sidebar__block__header ">Контакти</h2>
+          <table class="sidebar__contacts" cellspacing="0">
+            <tbody>
+              <!-- Contact -->
+              <tr>
+                <td>
+                  <span class="sidebar__contacts__icon">
+                    <img src="img/home.png">
+                  </span>
+                </td>
+                <td>
+                  <span class="span">
+                    Місто Київ, проспект Перемоги 37, 18 корпус
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="sidebar__contacts__icon">
+                    <img src="img/phone.png">
+                  </span>
+                </td>
+                <td>
+                  <span class="span">
+                    +380 (44) 204 86 10<br>
+                    +380 (44) 204 92 85
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="sidebar__contacts__icon">
+                    <img src="img/at.png">
+                  </span>
+                </td>
+                <td>
+                  <span class="span">
+                    kafedra@acts.kpi.ua
+                  </span>
+                </td>
+              </tr>
+              <!-- End Contact -->
+            </tbody>
+          </table>
+        </div>
+
+        <div class="content__sidebar__block">
+          <h2 class="content__sidebar__block__header">Останні новини</h2>
+          <div class="sidebar__news">
+              
+                                <!-- NEWS -->
+            {% for new in news %}
+            <a class="sidebar__news__news" href="">
+              <h3 class="sidebar__news__news__header">
+                Lorem Ipsum
+              </h3>
+                <p>Lorem ipsum dolor sit amet, nisl dictas deleniti nam ea, vim blandit repudiare ne. Vel eu equidem dignissim dissentias, cibo sonet mel ne. Quodsi aperiri adipiscing no pri. At vix munere gubergren.</p>
+              <span class="sidebar__news__news__date">01.01.1970</span>
+            </a>     
+            {% endfor %}
+          </div>
+                                <!-- END News -->
+        </div>
+
+      </sidebar>
+    </sidebar>
+    <!-- END Sidebar  -->
+                                
+        
+                                <!-- CONTENT -->
+      <div class="content__content">
+        <section class="about__department">
+          <div class="history">
+          <!-- {% for c in cath  %} -->
+          <h1 class="header-with-line">
+            <!-- {{c.title}} -->
+              Про кафедру
+          </h1>
+          <p>
+           <!-- {{c.content}} The content -->
+Однією з провідних кафедр України, діяльність випускників яких пов’язана з інформатизацією, є кафедра Автоматики та Управління в Технічних Системах факультету Інформатики та Обчислювальної Техніки Національного Технічного Університету України “Київський політехнічний інститут імені Ігоря Сікорського”.
+Особливістю підготовки наших випускників є глибоке вивчення найсучасніших високотехнологічних галузей науки і техніки: </p>
+              <ul class="cath__sections">
+                  <li class="cath__sections__li">Інформаційних технологій</li> 
+                  <li class="cath__sections__li">комп’ютерної, мікропроцесорної техніки та електроніки</li> 
+                  <li class="cath__sections__li">систем та мереж передачі даних і телекомунікацій</li>
+                  <li class="cath__sections__li">комп’ютеризованих систем управління</li>
+              </ul> </br>
+            <p>Наші студенти отримують грунтовні знання з різноманітних дисциплін, а саме:</p>
+            <p><strong>програмування</strong></p> <img src="img/programming.png">
+              <ul class="cath__sections">
+                  <li class="cath__sections__li">алгоритмічні мови</li> 
+                  <li class="cath__sections__li">об’єктно-орієнтоване та системне програмування</li> 
+                  <li class="cath__sections__li">сучасні технології програмування</li>
+                  <li class="cath__sections__li">бази даних</li>
+                  <li class="cath__sections__li">операційні системи</li>
+                  <li class="cath__sections__li">WEB-технології тощо</li>
+              </ul>           
+              
+            <p><strong>математики</strong>:</p> <img src="img/math.png">
+            <ul class="cath__sections">
+                  <li class="cath__sections__li">вища математика</li> 
+                  <li class="cath__sections__li">дискретна математика</li> 
+                  <li class="cath__sections__li">теорія ймовірності і матстатистика</li>
+                  <li class="cath__sections__li">алгоритміка</li>
+                  <li class="cath__sections__li">основи штучного інтелекту</li>
+                  <li class="cath__sections__li">дослідження операцій та математичне програмування </li>
+            </ul>
+            <p><strong>теорії і засобів телекомунікації</strong>:</p> <img src="img/communication.png">
+            <ul class="cath__sections">
+                  <li class="cath__sections__li">теорія інформації і кодування</li> 
+                  <li class="cath__sections__li">цифрова обробка сигналів</li> 
+                  <li class="cath__sections__li">основи теорії інформаційних процесів</li>
+                  <li class="cath__sections__li">захист інформації та комп’ютерна криптографія</li>
+                  <li class="cath__sections__li">системи та мережі передачі даних</li>
+                  <li class="cath__sections__li">програмно-апаратні засоби телекомунікаційних систем та мереж </li>
+                  <li class="cath__sections__li">аналіз, моделювання, експлуатація, моніторинг та адміністрування телекомунікаційних мереж і систем</li>
+            </ul>  
+            <p><strong>комп’ютерної та мікропроцесорної техніки</strong>:</p> <img src="img/microchip.png">
+            <ul class="cath__sections">
+                  <li class="cath__sections__li">електроніка і мікросхемотехніка</li> 
+                  <li class="cath__sections__li">комп’ютерна електроніка, мікропроцесорні пристрої</li> 
+                  <li class="cath__sections__li">архітектура комп’ютерних систем і мереж</li>
+                  <li class="cath__sections__li">системи розподіленних та паралельних обчислень</li>
+                  <li class="cath__sections__li">проектування та програмування мікропроцесорних систем</li>
+            </ul>
+            <p><strong>теорії та систем управління</strong>:</p> <img src="img/controlsystem.png">
+            <ul class="cath__sections">
+                  <li class="cath__sections__li">теорія автоматичного управління</li> 
+                  <li class="cath__sections__li">системний аналіз об’єктів і процесів комп’ютеризації</li> 
+                  <li class="cath__sections__li">цифрові системи управління, оптимальні та адаптивні системи</li>
+                  <li class="cath__sections__li">банківскі та спеціалізовані системи та мережі</li>
+                  <li class="cath__sections__li">інтегровані корпоративні інформаційно-управляючі системи тощо</li>
+            </ul>
+            <p><strong>проектування</strong>:</p> <img src="img/design.png">
+            <ul class="cath__sections">
+                  <li class="cath__sections__li">сучасні технології</li> 
+                  <li class="cath__sections__li">проектування пристроїв систем управління</li> 
+                  <li class="cath__sections__li">надійність і діагностика</li>
+                  <li class="cath__sections__li">мережеві технології в управлінні технічними системами</li>
+                  <li class="cath__sections__li">проектування та моделювання комп’ютерних мереж і комп’ютеризованих систем управління</li>
+            </ul>
+            
+          <p>Все це можливо в рамках спеціальності “Системи управління і автоматики” (д,б\в). В рамках цієї спеціальності є спеціалізації: “Управління інформаційними процесами” і “Комп’ютеризовані локальні системи та мережі перетворення та обробки інформації”.</p>
+         <!-- {% endfor %} -->
+        </section>
+        
+      </div>
+    </div>    
+      <!-- END Content -->
+
+        
+        
+                                <!-- FOOTER -->
+    
+    <footer class="footer">
+      <div class="footer__left">
+        <h1>Нашi партнери</h1>
+        <div class="prtners">
+          <a href="http://microsoft.com" target="_blank">
+            <img src="img/microsoft.png" alt="">
+          </a>
+          <a href="http://www.ti.com" target="_blank">
+            <img src="img/texas.png" alt="">
+          </a>
+          <a href="http://www.cisco.com" target="_blank">
+            <img src="img/cisco.png" alt="">
+          </a>
+          <a href="http://www.atmel.com" target="_blank">
+            <img src="img/atmel.png" alt="">
+          </a>
+        </div>
+      
+                                <!-- Contacts -->
+      <div class="footer__contacts">
+        <p>
+          &copy; ACTS | +380 (44) 204 86 10 | +380 (44) 204 92 85 | kafedra@acts.kpi.ua 
+        </p>
+      </div>
+    </footer>
+                                <!-- END Contacts -->
+
+    <!-- END Footer -->
     </div>
-  </div>
-</div>
-
-<!-- Second Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third w3-center">
-      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
-    </div>
-
-    <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
-
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>
-</div>
-
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
-</div>
-</div>
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
-  <div class="w3-xlarge w3-padding-32">
-   <a href="#" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
-   <a href="#" class="w3-hover-text-red"><i class="fa fa-pinterest-p"></i></a>
-   <a href="#" class="w3-hover-text-light-blue"><i class="fa fa-twitter"></i></a>
-   <a href="#" class="w3-hover-text-grey"><i class="fa fa-flickr"></i></a>
-   <a href="#" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
- </div>
-</footer>
-
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else { 
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
-
+ 
+<script src="js/script.js"></script>    
 </body>
 </html>
