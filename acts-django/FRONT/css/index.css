@@ -898,6 +898,7 @@ section p, .about__department p {
 	background-color: transparent;
 	background-image: url('../img/pencil.png');
 	border: transparent;
+	opacity: .64;
     background-repeat: no-repeat;
     background-position: center;  
 	height: 24px;
@@ -911,6 +912,7 @@ section p, .about__department p {
 .remove__button {
 	float: left;
 	background-color: transparent;
+	opacity: .64;
 	background-image: url('../img/clear.png');
 	border: transparent;
     background-repeat: no-repeat;
