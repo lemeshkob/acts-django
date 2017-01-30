@@ -568,7 +568,7 @@ section p, .about__department p {
 
 .section__image  {
 	height: 260px;
-	background-size: 100% auto;
+	background-size: 100%;
 	background-position: center;
 }
 
@@ -848,4 +848,60 @@ section p, .about__department p {
 
 .person__works__li a {
 	text-decoration: none;
+}
+
+.personal__blog section {
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.personal__blog section:hover {
+	cursor: pointer;
+	background: rgba(232, 232, 232, 0.4);
+}
+
+.personal__blog section h1:hover {
+	color: rgba(87, 129, 221, .92);
+}
+
+.blog__news__date {
+	color: rgba(0, 0, 0, 0.8); 
+	font-family: 'Open Sans';
+	text-align: left;
+	float: left;
+	font-size: 14px;
+	display: inline-block;
+	margin: 5px 0 0 0;
+}
+
+.admin__buttons {
+	float: right;
+}
+
+.edit__button {
+	float: left;
+	background-color: transparent;
+	background-image: url('../img/pencil.png');
+	border: transparent;
+    background-repeat: no-repeat;
+    background-position: center;  
+	height: 24px;
+	width: 24px;
+    cursor: pointer;
+    display: inline-block;
+	margin: 5px 5px 0 0;
+	padding-right: 5px;
+}
+
+.remove__button {
+	float: left;
+	background-color: transparent;
+	background-image: url('../img/clear.png');
+	border: transparent;
+    background-repeat: no-repeat;
+    background-position: center;  
+	height: 24px;
+	width: 24px;
+    cursor: pointer;
+    display: inline-block;
+	margin: 5px 0 0 0;
 }
