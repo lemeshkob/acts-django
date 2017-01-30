@@ -715,7 +715,7 @@ section p, .about__department p {
 
 .person__row {
 	color: #414141;
-	width: auto;
+	width: 100%;
     margin-left: -0.9375em;
     margin-right: -0.9375em;
     margin-top: 0;
@@ -723,7 +723,7 @@ section p, .about__department p {
     max-width: none;
 }
 
-.person__wrapper {
+.person__wrapper, .person__wrapper__personal {
 	margin-bottom: 20px;
     padding: 10px;
     text-align: center;
@@ -796,4 +796,56 @@ section p, .about__department p {
 	width: 250px;
 	display: inline-block;
 	vertical-align: top;
+}
+
+.details h1 {
+	font-size: 18px;
+}
+
+.details {
+	width: 46%;
+	padding: 0 5px;
+	margin: 10px auto;
+	display: inline-table;
+}
+
+.person__avatar__personal {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.person__avatar__personal img {
+	cursor: pointer;
+	max-width: 100%;
+	height: auto;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.person__subject__li, .person__interests__li {
+	padding: 1%;
+	color: rgba(0, 0, 0, 0.7);
+	font: 400 16px/20px "Raleway", Georgia, Times, serif;
+	list-style-type: none;
+}
+
+.person__subject__li:hover, .person__interests__li:hover{
+	cursor: pointer;
+	background: rgba(232, 232, 232, 0.4);
+	color: rgba(87, 129, 221, .92);
+	list-style-type: circle;
+}
+
+.person__works__li {
+	padding: 1%;
+	color: rgba(0, 0, 0, 0.7);
+	font: 400 16px/20px "Raleway", Georgia, Times, serif;
+	list-style-type: decimal;
+}
+
+.person__works__li a {
+	text-decoration: none;
 }
