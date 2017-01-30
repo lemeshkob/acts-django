@@ -399,7 +399,7 @@ a.lang_active_en {
     padding: 0 25px; 
 }
 
-.content__about {
+.content__about, .teacher {
     display: inline-block;
 	width: 700px;
 	margin: 0 0 0 50px;
@@ -656,172 +656,6 @@ section p, .about__department p {
 	color: #579ade;
 }
 
-.ped {
-	white-space: nowrap;
-}
-
-.ped:not(:first-of-type) {
-	margin: 25px 0 0 0;
-}
-
-.ped:not(:last-of-type) {
-	border-bottom: 1px solid rgba(0, 0, 0, .12);
-	padding: 0 0 20px 0;
-}
-
-.ped__photo {
-	display: inline-block;
-	vertical-align: top;
-	width: 100px;
-	height: 100px;
-	border-radius: 50px;
-	overflow: hidden;
-}
-
-.ped__photo__photo {
-	width: 100%;
-}
-
-.ped__info {
-	display: inline-block;
-	vertical-align: top;
-	white-space: normal;
-	box-sizing: border-box;
-	padding: 0 0 0 10px;
-	width: calc(100% - 100px);
-}
-
-.ped__links {
-	margin: 15px 0 0 0;
-}
-
-.ped__link {
-	display: inline-block;
-	font-size: 14px;
-	height: 30px;
-	line-height: 30px;
-	padding: 0 10px;
-	border-radius: 2px;
-	color: #000;
-	border: 1px solid #000;
-	text-decoration: none;
-	transition: all 300ms ease;
-	margin: 0 5px 0 0;
-	opacity: .7;
-}
-
-.ped__link:hover {
-	color: #fff;
-	opacity: 1;
-}
-
-.ped__link_int {
-	color: 	#3a9b5c;
-	border-color: #3a9b5c;
-}
-
-.ped__link_int:hover {
-	background: #3a9b5c;
-}
-
-.ped__link_roz {
-	color: 	#579ade;
-	border-color: #579ade;
-}
-
-.ped__link_roz:hover {
-	background: #579ade;
-}
-
-.ped__link_web {
-	color: 	#e91e63;
-	border-color: #e91e63;
-}
-
-.ped__link_web:hover {
-	background: #e91e63;
-}
-
-.ped__info__info {
-	font-size: 14px;
-	color: rgba(0, 0, 0, .54);
-	text-indent: 0px;
-	margin: 15px 0 0 0;
-}
-
-h4.ped__info__more__list__header {
-	font-size: 16px;
-	font-weight: 700;
-	color: rgba(0, 0, 0, .74);
-}
-
-.ped__info__more__list__list {
-	font-size: 14px;
-	/*list-style-position: inside;*/
-	color: rgba(0, 0, 0, .74);
-	padding: 0 0 0 45px;
-	margin: 5px 0;
-
-}
-
-.ped__info__more__list__list li {
-	margin-left: -15px;
-	padding: 0;
-}
-
-.ped__info__more__list {
-	padding: 10px 0;
-}
-
-.ped__info__more__open {
-	height: 20px;
-	line-height: 20px;
-	font-size: 14px;
-	user-select: none;
-	color: #579ade;
-}
-
-.ped__info__more__open:after {
-	content: '¡';
-	display: inline-block;
-	font-size: 10px;
-	transition: transform 300ms ease;
-}
-
-.ped__info__more_active .ped__info__more__open:after {
-	transform: rotateX(180deg);
-}
-
-.ped__info__more__open:hover {
-	text-decoration: underline;
-	cursor: pointer;
-}
-
-.ped__info__more {
-	max-height: 20px;
-	overflow: hidden;
-	transition: all 1000ms ease;
-	margin: 10px 0 0 0;
-}
-
-.ped__info__more_active {
-	 max-height: 600px;
-}
-
-.profile-header {
-	display: inline-block;
-}
-
-.profile-header__name {
-    font-family: 'IgraSans';
-    font-size: 24px;
-    margin: 8px 0 0 0;
-}
-
-.profile-header__status {
-	font-size: 15px;
-	color: rgba(0, 0, 0, .54);
-}
 
 .footer {
 	background: #3f3f3f;
@@ -848,7 +682,19 @@ h4.ped__info__more__list__header {
 }
 
 .footer {
+	margin-top: 80px;
+	padding: 25px 0 15px 0;
 	margin: 40px 0 0 0;
+	width: 100%;
+}
+
+.footer__left {
+	width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+
 }
 
 .footer__left h1 {
@@ -865,52 +711,80 @@ h4.ped__info__more__list__header {
 	margin: 15px 0 0 0;
 }
 
-.profile__avatar {
+.person__row {
+	color: #414141;
+	width: auto;
+    margin-left: -0.9375em;
+    margin-right: -0.9375em;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: none;
+}
+
+.person__wrapper {
+	margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.person__wrapper:hover, .person__wrapper__l:hover {
+	background-color: #f2f2f2;
+}
+
+.person__avatar {
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
 	margin: 0 auto;
-	width: 150px;
-	height: 150px;
-	border-radius: 100%;
 	overflow: hidden;
-	vertical-align: top;
+}
+
+.person__avatar img {
+	cursor: pointer;
+	max-width: 100%;
+	height: auto;
 	display: inline-block;
+	vertical-align: middle;
 }
 
-.profile__avatar img {
-	width: 100%;
+.person__name {
+	font: 300 18px/20px "IgraSans", Georgia, Times, serif;
+	padding-top: 10px;
 }
 
-.profile__hello {
-	font-size: 14px;
-	font-weight: 600;
+.person__position {
+	margin-top: 5px;
+	font: 400 14px/20px "Raleway", Georgia, Times, serif;
+	color: rgba(0, 0, 0, .68);
 }
 
-.profile__info {
-	display: inline-block;
-	width: calc(100% - 150px);
-	vertical-align: top;
-	box-sizing: border-box;
-	padding: 0 0 0 15px;
+.person__links {
+	margin: 15px 0;
 }
 
-.profile__info p {
-	text-indent: 0px;
-	margin: 15px 0 0 0;
+/* If something is wrong with w3c style we can use this one for links
+
+.person__links a {
+	text-decoration: none;
+	border-width: 1px;
+    border-style: solid;
+    padding: 5px 10px;
+    margin-right: 5px;
 }
 
-.timetable {
-	font-size: 14px;
+.person__links a.g {
+	color: rgba(52, 92, 179, 0.88);
+    border-color: rgba(52, 92, 179, 0.4);
+} */
+
+.person__wrapper__l {
+	width: 33%;
+    float: left;
+	display: inline-table;
 }
 
-.timetable td {
-	padding: 5px 10px;
-	border-bottom: 1px solid rgba(0, 0, 0, .12);
-}
-
-.timetable td>div:first-of-type {
-	font-weight: bold;
-}
-
-.timetable__period {
-	font-size: 12px;
-	white-space: nowrap;
+.person__wrapper__l {
+	margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
 }
