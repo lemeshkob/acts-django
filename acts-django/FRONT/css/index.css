@@ -160,6 +160,22 @@ a.header__menu__a_logo {
     font-size: 1em;
 }
 
+.header__login__button {
+	border-color: transparent;
+	background: url(../img/login.png);
+	background-repeat: no-repeat;
+    background-position: center;
+	opacity: .64;
+	height: 32px;
+	width: 32px;
+	cursor: pointer;
+    display: inline-block;
+	line-height: 30px;
+	vertical-align: top;
+	transition: all 300ms ease;
+    font-size: 1em;
+}
+
 .langs {
 	display: inline-block;
 	height: 20px;
