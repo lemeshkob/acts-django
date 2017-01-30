@@ -26,6 +26,11 @@ body {
     position: relative;
 }
 
+.wrapper {
+	box-sizing: border-box;
+	min-height: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-size: 19px;
 	font-family: 'IgraSans';
@@ -331,7 +336,7 @@ a.lang_active_en {
 	vertical-align: top;
 }
 
-.content__sidebar__block__header {
+.content__sidebar__block__header, .person__content__sidebar__block__header {
     font-family: 'Raleway';
 	height: 35px;
 	line-height: 35px;
@@ -346,7 +351,7 @@ a.lang_active_en {
     border-radius: 1px;
 }
 
-.sidebar__nav__btn {
+.sidebar__nav__btn, .person__.sidebar__nav__btn {
 	font-size: 14px;
 	height: 35px;
 	box-sizing: border-box;
@@ -360,11 +365,11 @@ a.lang_active_en {
 }
 
 
-.sidebar__nav__btn_active {
+.sidebar__nav__btn_active, .person__.sidebar__nav__btn {
 	font-weight: 600;
 }
 
-.sidebar__nav__btn:hover{
+.sidebar__nav__btn:hover,  .person__sidebar__nav__btn:hover {
 	background: #f4f4f4;
 	color: rgba(87, 129, 221, .92);
 }
@@ -656,11 +661,6 @@ section p, .about__department p {
 	color: #579ade;
 }
 
-
-.footer {
-	background: #3f3f3f;
-}
-
 .prtners img {
 	height: 45px;
 }
@@ -682,8 +682,10 @@ section p, .about__department p {
 }
 
 .footer {
+	background: #3f3f3f;
 	margin-top: 80px;
-	padding: 25px 0 15px 0;
+	left: 0;
+  	bottom: 0;
 	margin: 40px 0 0 0;
 	width: 100%;
 }
@@ -787,4 +789,11 @@ section p, .about__department p {
 	margin-bottom: 10px;
     padding: 10px;
     text-align: center;
+}
+
+.person__content__sidebar {
+	padding: 5 auto;
+	width: 250px;
+	display: inline-block;
+	vertical-align: top;
 }
