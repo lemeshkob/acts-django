@@ -55,13 +55,22 @@
               <a href="#" class="sidebar__nav__btn">Дисципліни</a>
             </li>
             <li>
-              <a href="#" class="sidebar__nav__btn">Дисципліни</a>
+              <a href="#" class="sidebar__nav__btn">Сфера наукових інтересів</a>
             </li>
             <li>
-			  <a href="#" class="sidebar__nav__btn">Дисципліни</a>            </li>
+			  <a href="#" class="sidebar__nav__btn">Публікації</a></li>
             <li>
-              <a href="" class="sidebar__nav__btn">Дисципліни</a>
-            </li> 
+              <a href="#" class="sidebar__nav__btn" id="consultation">Консультації</a>
+				<!--e.g.  alert ({{person.consultation}}) -->
+				<script type="text/javascript">
+				  consultation.onclick = function() {
+					alert( 'Час та місце проведення консультацій: четверг, 16:00, 528, 307-18' );
+				  };
+				</script>
+            </li>
+			<li>
+              <a target="_blank" href="http://rozklad.kpi.ua/Schedules/ViewSchedule.aspx?v=4ae7f846-9283-4802-9940-7c82bea8d47d" class="sidebar__nav__btn">Розклад</a>
+            </li>  
           </ul>
 		<h2 class="content__sidebar__block__header"></h2>	
         </div>
@@ -81,8 +90,8 @@
           </h1>
 			<!-- Everything here will be extracted from database. Use loop for each person in a row-->  
 			<div class="person__row"> 
-				<div class="person__wrapper">
-					<div class="person__avatar">
+				<div class="person__wrapper__personal">
+					<div class="person__avatar__personal">
 					<img src="http://acts.kpi.ua/app/uploads/2015/07/Теленик.jpg"> 
 					</div>
 					
