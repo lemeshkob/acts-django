@@ -136,11 +136,38 @@
 			  
 			<div class="personal__blog" id="personalblog">
 			<h1 class="header-with-line">Особистий блог:</h1>
-			</div>
-			  
+				<section>
+				  <!-- {% for a in articles  %} -->
+				  <h1>
+					<!-- {{a.title}} article's title-->
+					  Lorem ipsum
+				  </h1>
+				  <!-- Picture from DB
+				  <div class="section__image" style="
+				  background-image: url('{{a.img_field}}')"></div> -->
+				  <div class="section__image" style="
+				  background-image: url('http://1tv.com.ua/uploads/cover/2015/05/12/f43f947194f1ee5aac8f5cce122d653a.jpg')"></div>  
+				  <p>
+				   <!-- {{a.description}} The content of article -->
+		Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. 
+				  </p>						   		 
+			    </section>
+				<span class="blog__news__date">
+				   <!-- {{a.published_date}} -->  01/01/2013
+				</span> 
+				
+				<span class="buttons">
+					<form method="get" action="" class="admin__buttons">
+						<input type="button" class="edit__button">
+						<input type="button" class="remove__button">
+					</form>	
+				</span>
+				
+			<!-- {% endfor %} -->	
 		  </div>
-		</div> 						
-	    </div>	
+		</div>	  
+	</div> 						
+</div>	
         						<!-- END Content -->
         
                                 <!-- FOOTER -->
