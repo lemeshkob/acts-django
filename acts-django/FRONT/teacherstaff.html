@@ -80,7 +80,7 @@
               <a href="" class="sidebar__nav__btn">Історія кафедри</a>
             </li>
             <li>
-              <a href="teachstaff.html" class="sidebar__nav__btn">Педагогічний склад</a>
+              <a href="#" class="sidebar__nav__btn">Педагогічний склад</a>
             </li>
             <li>
               <a href="" class="sidebar__nav__btn">Допоміжний персонал</a>
@@ -151,7 +151,6 @@
               <h3 class="sidebar__news__news__header">
                 Lorem Ipsum
               </h3>
-                <p>Lorem ipsum dolor sit amet, nisl dictas deleniti nam ea, vim blandit repudiare ne. Vel eu equidem dignissim dissentias, cibo sonet mel ne. Quodsi aperiri adipiscing no pri. At vix munere gubergren.</p>
               <span class="sidebar__news__news__date">01.01.1970</span>
             </a>     
             {% endfor %}
@@ -166,19 +165,117 @@
         
                                 <!-- CONTENT -->
       <div class="content__about">
-        <section class="about__department">
-          <div class="history">
+          <div class="teacher">
           <!-- {% for c in cath  %} -->
           <h1 class="header-with-line">
             <!-- {{c.title}} -->
               Педагогічний склад
           </h1>
-           <!-- {{c.content}} The content -->
-
-
-      						<!-- END Content -->
-
-        
+			<!-- Everything here will be extracted from database. Use loop for each person in a row-->  
+			<div class="person__row"> 
+				<div class="person__wrapper">
+					<div class="person__avatar">
+					<img src="http://acts.kpi.ua/app/uploads/2015/07/Теленик.jpg"> 
+					</div>
+					
+					<div class="person__name">
+						Теленик Сергій Федорович
+					</div>
+					
+					<div class="person__position">
+						ЗАВІДУВАЧ КАФЕДРИ голова НМК МОН України "Автоматика та управління" керівник циклу математичних дисциплін д.т.н., професор
+					</div>
+					
+					<div class="person__links">
+						<a class="w3-btn w3-ripple w3-blue-grey w3-round-small" href="personabout.html" target="_blank">Детальніше</a>
+					</div>
+					
+				</div>
+			</div>
+			  
+			<div class="person__row"> 
+				<div class="person__wrapper">
+					<div class="person__avatar">
+					<img src="http://acts.kpi.ua/app/uploads/2015/07/Новацкий.jpg"> 
+					</div>
+					
+					<div class="person__name">
+						Новацький Анатолій Олександрович
+					</div>
+					
+					<div class="person__position">
+						ПЕРШИЙ ЗАСТУПНИК заступник з навчально-виховної роботи відповідальний за заочну форму навчання керівник циклу "Комп'ютерна електроніка та мікропроцесорна техніка" к.т.н., доцент
+					</div>
+					
+					<div class="person__links">
+						<a class="w3-btn w3-ripple w3-blue-grey w3-round-small" href="#" target="_blank">Детальніше</a>
+					</div>
+					
+				</div>
+			</div>
+			  
+			<div class="person__row">   
+			<div class="person__wrapper__l">
+				<div class="person__avatar">
+					<img src="http://acts.kpi.ua/app/uploads/2015/07/Screenshot-from-2015-07-12-132033.png"> 
+					</div>
+					
+					<div class="person__name">
+						Писаренко Андрій Володимирович
+					</div>
+					
+					<div class="person__position">
+						ЗАСТУПНИК З НАВЧАЛЬНО-МЕТОДИЧНОЇ РОБОТИ вчений секретар к.т.н., доцент
+					</div>
+					
+					<div class="person__links">
+						<a class="w3-btn w3-ripple w3-blue-grey w3-round-small" href="#" target="_blank">Детальніше</a>
+					</div>
+			</div>
+				
+				<div class="person__wrapper__l">
+					<div class="person__avatar">
+					<img src="http://acts.kpi.ua/app/uploads/2015/07/Репникова.jpg"> 
+					</div>
+					
+					<div class="person__name">
+						Репнікова Наталія Борисівна
+					</div>
+					
+					<div class="person__position">
+						ЗАСТУПНИК ПО РОБОТІ З МАГІСТРАМИ секретар НМК МОН України "Автоматика та управління" керівник циклу "Теорія та системи управління" к.т.н., доцент
+					</div>
+					
+					<div class="person__links">
+						<a class="w3-btn w3-ripple w3-blue-grey w3-round-small" href="#" target="_blank">Детальніше</a>
+					</div>
+			</div>
+								
+				<div class="person__wrapper__l">
+					<div class="person__avatar">
+					<img src="http://acts.kpi.ua/app/uploads/2015/07/Ролик.jpg"> 
+					</div>
+					
+					<div class="person__name">
+						Ролік Олександр Іванович
+					</div>
+					
+					<div class="person__position">
+						ЗАСТУПНИК З НАУКОВОЇ РОБОТИ відповідальний за проектно-конструкторську роботу відповідальний за технічну політику і розвиток директор ННЦ "Неткрекер-КПІ" д.т.н., професор
+					</div>
+					
+					<div class="person__links">
+						<a class="w3-btn w3-ripple w3-blue-grey w3-round-small" href="#" target="_blank">Детальніше</a>
+					</div>
+			</div>	
+				
+			</div>  
+			  
+		  </div>
+		</div> 						
+		
+		</div>
+        						<!-- END Content -->
         
                                 <!-- FOOTER -->
     
@@ -210,7 +307,7 @@
                                 <!-- END Contacts -->
 
     							<!-- END Footer -->
-    </div>
+    
  
 <script src="js/script.js"></script>    
 </body>
