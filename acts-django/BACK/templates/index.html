@@ -1,0 +1,328 @@
+{% load static %}
+<!DOCTYPE html>
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="{% static  'css/index.css'%}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>АУТС</title>
+    <link rel="icon" href="{% static 'img/favicon.ico' %}">
+</head>
+
+<body>
+  <div class="wrapper">
+
+                                <!-- HEADER -->
+    <div class="header">
+      <div class="row" id="topRow">
+        <menu class="header__menu">
+          <ul>
+            <a href="" class="header__menu__a_logo">
+              <img class="header__menu__logo" src="{% static 'img/logo.png' %}">
+            </a>
+          </ul>
+          <ul>
+            <a href="">Абітурієнтам</a>
+          </ul>
+          <ul>
+            <a href="">Студентам</a>
+          </ul>
+          <ul>
+            <a href="">Розробки</a>
+          </ul>
+            <ul>
+            <a href="">Наука</a>
+          </ul>
+        </menu>
+        <div class="header__right medium-2 columns search__wrapper out">
+          <li class="ul langs">
+            <ul><a href='/?lang=ua' class="lang__active">ua</a></ul>
+            <ul><a href='/?lang=en'>en</a></ul>
+          </li>
+
+                                <!-- Search area -->
+          <form method="get" action="" class="header__search">
+            <input type="text" class="input_text" name="search">
+            <input type="submit" class="header__search__button">
+			<a href="authorization.html" title="Авторизація"><input type="button" class="header__login__button"></a>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- END Header -->
+
+                                <!-- SLIDER -->
+    <div class="slider">
+      <li class="slider__slider">
+        <ul>
+          <div class="slider__slide" style="background-image: url('{%  static 'img/slide1.jpg' %}');">
+            <div class="slider__slide__content">
+              <div class="row slider__slide__content__row">
+                <h1 class="slider__header">
+                  Сучасна <span class="slider__header__higlight"> матеріальна </span>
+                  база
+                 </h1>
+              </div>
+            </div>
+          </div>
+        </ul>
+        <ul>
+          <div class="slider__slide" style="background-image: url('{%  static 'img/slide2.jpg' %}');">
+            <div class="slider__slide__content">
+              <div class="row slider__slide__content__row">
+                <h1 class="slider__header">
+                  Одна з <span class="slider__header__higlight"> найкращих </span>
+                  кафедр КПІ
+                </h1>
+              </div>
+            </div>
+          </div>
+        </ul>
+        <ul>
+          <div class="slider__slide" style="background-image: url('{%  static 'img/slide3.jpg' %}');">
+            <div class="slider__slide__content">
+              <div class="row slider__slide__content__row">
+                <h1 class="slider__header">
+                  Ґрунтовна
+                  <span class="slider__header__higlight"> освіта</span> та гарна робота
+                </h1>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </li>
+      <div class="row">
+        <li class="slider__circles"></li>
+      </div>
+    </div>
+                                <!-- END Slider -->
+
+
+                                <!-- BODY START -->
+    <!-- Sidebar -->
+    <div class="content row medium-3 columns s">
+    <!-- Social Networks -->
+
+    <sidebar class="content__sidebar">
+        <div class="social__holder">
+
+          <h2 class="content__sidebar__block__header">Ми у соціальних мережах</h2>
+            <ul>
+                <li><a class="w3-btn w3-indigo w3-round-medium" href="https://www.facebook.com/actskpi" target="_blank">Facebook</a></li>
+                <li><a class="w3-btn w3-blue-grey w3-round-medium" href="https://vk.com/actskpi" target="_blank">VK</a></li>
+           </ul>
+        </div>
+
+                                <!-- INFORMATION -->
+      <sidebar class="content__sidebar">
+        <div class="content__sidebar__block ">
+          <h2 class="content__sidebar__block__header">Інформація</h2>
+          <ul class="sidebar__nav">
+            <li>
+              <a href="http://127.0.0.1:8000/about/" class="sidebar__nav__btn">Про кафедру</a>
+            </li>
+            <li>
+              <a href="" class="sidebar__nav__btn">Історія кафедри</a>
+            </li>
+            <li>
+              <a href="http://127.0.0.1:8000/teacherstaff/" class="sidebar__nav__btn">Педагогічний склад</a>
+            </li>
+            <li>
+              <a href="" class="sidebar__nav__btn">Допоміжний персонал</a>
+            </li>
+            <li>
+              <a href="" class="sidebar__nav__btn">Студентське життя</a>
+            </li>
+            <li>
+              <a href="" class="sidebar__nav__btn">Вступнику 2017-го</a>
+            </li>
+          </ul>
+        </div>
+
+      <div class="content__sidebar__block">
+          <h2 class="content__sidebar__block__header ">Контакти</h2>
+          <table class="sidebar__contacts" cellspacing="0">
+            <tbody>
+              <!-- Contact -->
+              <tr>
+                <td>
+                  <span class="sidebar__contacts__icon">
+                    <img src="{% static 'img/home.png'%}">
+                  </span>
+                </td>
+                <td>
+                  <span class="span">
+                    Місто Київ, проспект Перемоги 37, 18 корпус
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="sidebar__contacts__icon">
+                    <img src="{% static 'img/phone.png' %}">
+                  </span>
+                </td>
+                <td>
+                  <span class="span">
+                    +380 (44) 204 86 10<br>
+                    +380 (44) 204 92 85
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="sidebar__contacts__icon">
+                    <img src="{% static 'img/at.png'%}">
+                  </span>
+                </td>
+                <td>
+                  <span class="span">
+                    kafedra@acts.kpi.ua
+                  </span>
+                </td>
+              </tr>
+              <!-- End Contact -->
+            </tbody>
+          </table>
+        </div>
+
+        <div class="content__sidebar__block">
+          <h2 class="content__sidebar__block__header">Останні новини</h2>
+          <div class="sidebar__news">
+
+                                <!-- NEWS -->
+            {% for new in news %}
+            <a class="sidebar__news__news" href="">
+              <h3 class="sidebar__news__news__header">
+                {{ new.title }}
+              </h3>
+              <span class="sidebar__news__news__date">{{ new.published_date }}</span>
+            </a>
+            {% endfor %}
+          </div>
+                                <!-- END News -->
+        </div>
+
+      </sidebar></sidebar>
+      <!-- END Sidebar  -->
+
+
+                                <!-- CONTENT -->
+      <div class="content__content">
+        <section class="advantages">
+          <div class="advantages_adv">
+            <img src="{% static 'img/graduate.png'%}" alt="Сучасні освітні програми">
+            <h2>Сучасні освітні програми</h2>
+            <p>
+              Розроблені відповідно до сучасних потреб ринку праці. Отримання високооплачуваної роботи гарантовано.
+            </p>
+          </div>
+
+          <div class="advantages_adv">
+            <img src="{% static 'img/person.png'%}" alt="Сучасні освітні програми">
+            <h2>Професорсько-викладацький склад</h2>
+            <p>
+              Висококваліфіковані викладачі кафедри мають значний досвід і в той самий час середній вік не перевищує 45 років.
+            </p>
+          </div>
+
+          <div class="advantages_adv">
+            <img src="{% static 'img/screen.png'%}" alt="Сучасні освітні програми">
+            <h2>Матеріально-технічна база</h2>
+            <p>
+              Лабораторії та комп’ютерні класи побудовані у співпраці з провідними ІТ-компаніями та оснащені найсучаснішою технікою та обладнанням.
+            </p>
+          </div>
+        </section>
+        <section>
+          <a href="http://www.iconfs.net/w.infocom2016" target="_blank" class="banner-img">
+            <img src="http://acts.kpi.ua/app/uploads/2015/07/Banner.jpg" alt="">
+          </a>
+        </section>
+
+        <section>
+          <!-- {% for c in cath  %} -->
+          <h1 class="header-with-line">
+            <!-- {{c.title}} New's title-->
+              Чорна рада
+          </h1>
+          <!-- Picture from DB
+          <div class="section__image" style="
+          background-image: url('{{c.img_field}}')"></div> -->
+          <div class="section__image" style="
+          background-image: url('http://bm.img.com.ua/nxs/img/prikol/images/large/3/2/281323_682087.jpg')"></div>
+          <p>
+           <!-- {{c.description}} The content of article -->
+По весні 1663 року двоє подорожніх, верхи на добрих конях, ізближались до Києва з Білогородського шляху. Один був молодий собі козак, збройний, як до війни; другий по одежі і по сивій бороді, сказать би, піп, а по шаблюці під рясою, по пістолях за поясом і по довгих шрамах на виду — старий "козарлюга". Коні в їх потомлені, одежа й тороки позапилювані: зараз було знати, що ідуть не зблизька.
+Не доїздячи верстов зо дві чи зо три до Києва, взяли вони у ліву руку да й побрались гаєм, по кривій доріжці. І хто тільки бачив, як вони з поля повернули в гай, усяке зараз домислялось, куди вони простують. Крива доріжка вела до Череваневою хутора, Хмарища. А Черевань був тяжко грошовитий да й веселий пан із козацтва, що збагатилось за десятилітню рійну з ляхами. Річ тут про Богдана Хмельницького, як він років з десяток шарпав з козаками шляхетних ляхів і недоляшків. От тоді-то й Черевань доскочив собі незчисленного скарбу, та після війни й сів хутором коло Києва.
+          </p>
+         <!-- {% endfor %} -->
+        </section>
+        <section>
+          <h1 class="header-with-line">
+            Новини
+          </h1>
+          <!-- the same logic -->
+          {% for new in news %}
+          <div class="news">
+            <a class="news__news" href="">
+               <div class="news__news__img-wrap">
+                <img src="{{new.img_field}}" alt="">
+              </div>
+                <div class="news__news__img-wrap">
+              </div>
+              <h3 class="news__news__header">
+               {{new.title}}
+              </h3>
+              <span class="news__news__date">
+               {{new.published_date}}
+              </span>
+            </a>
+          {% endfor %}
+          </div>
+        </section>
+      </div>
+    </div>
+      <!-- END Content -->
+
+
+
+                                <!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="footer__left">
+        <h1>Нашi партнери</h1>
+        <div class="prtners">
+          <a href="http://microsoft.com" target="_blank">
+            <img src="{% static 'img/microsoft.png'%}" alt="">
+          </a>
+          <a href="http://www.ti.com" target="_blank">
+            <img src="{% static 'img/texas.png'%}" alt="">
+          </a>
+          <a href="http://www.cisco.com" target="_blank">
+            <img src="{% static 'img/cisco.png'%}" alt="">
+          </a>
+          <a href="http://www.atmel.com" target="_blank">
+            <img src="{% static 'img/atmel.png'%}" alt="">
+          </a>
+        </div>
+
+                                <!-- Contacts -->
+      <div class="footer__contacts">
+        <p>
+          &copy; ACTS | +380 (44) 204 86 10 | +380 (44) 204 92 85 | kafedra@acts.kpi.ua
+        </p>
+      </div>
+      </div>
+    </footer>
+                                <!-- END Contacts -->
+
+    <!-- END Footer -->
+
+  </div>
+<a href="#topRow" class="scrollToTop" title="Вгору"></a>
+<script src="{% static 'js/script.js'%}"></script>
+
+</body>

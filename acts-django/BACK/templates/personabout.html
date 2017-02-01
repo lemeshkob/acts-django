@@ -1,0 +1,221 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>Педагогічний склад</title> <!-- c.page_title (for example) -->
+    <html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <link rel="stylesheet" href="{% static  'css/index.css'%}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css'%}">
+  <link rel="icon" href="{% static 'img/favicon.ico' %}">
+</head>
+<body>
+    <div class="wrapper">
+             
+                                 <!-- HEADER -->
+    <div class="header">
+      <div class="row">
+        <menu class="header__menu">
+          <ul>
+            <a href="http://127.0.0.1:8000/" class="header__menu__a_logo">
+              <img class="header__menu__logo" src="{% static 'img/logo.png'%}">
+            </a>
+          </ul>
+          <ul>
+            <a href="">Абітурієнтам</a>
+          </ul>
+          <ul>
+            <a href="">Студентам</a>
+          </ul>
+          <ul>
+            <a href="">Розробки</a>
+          </ul>
+            <ul>
+            <a href="">Наука</a>
+          </ul>
+        </menu>
+        <div class="header__right medium-2 columns search__wrapper out">
+          <li class="ul langs">
+            <ul><a href='/?lang=ua' class="lang__active">ua</a></ul>
+            <ul><a href='/?lang=en'>en</a></ul>
+          </li>
+            
+                                <!-- Search area -->
+          <form method="get" action="" class="header__search">
+            <input type="text" class="input_text" name="search">
+            <input type="submit" class="header__search__button">
+			<a href="authorization.html" title="Авторизація"><input type="button" class="header__login__button"></a>   
+          </form>
+        </div>
+      </div>
+    </div>
+    							<!-- END Header -->
+      
+     
+      
+                                <!-- BODY START -->
+    <!-- Sidebar -->
+    <div class="content row medium-9 columns teacher__staff">     
+    <!-- Social Networks -->   
+                            
+                                <!-- INFORMATION -->   
+      <sidebar class="person__content__sidebar">
+        <div class="person__content__sidebar__block ">
+          <h2 class="person__content__sidebar__block__header">Інформація</h2>
+          <ul class="sidebar__nav">
+            <li>
+			  <a href="#works" class="sidebar__nav__btn">Публікації</a></li>
+            <li>
+              <a href="#" class="sidebar__nav__btn" id="consultation">Консультації</a>
+				<!--e.g.  alert ({{person.consultation}}) -->
+				<script type="text/javascript">
+				  consultation.onclick = function() {
+					alert( 'Час та місце проведення консультацій: четверг, 16:00, 528, 307-18' );
+				  };
+				</script>
+            </li>
+			<li>
+              <a target="_blank" href="http://rozklad.kpi.ua/Schedules/ViewSchedule.aspx?v=4ae7f846-9283-4802-9940-7c82bea8d47d" class="sidebar__nav__btn">Розклад</a>
+            </li>
+			<li>
+			  <a href="#personalblog" class="sidebar__nav__btn">Особистий блог</a></li>
+            <li>  
+          </ul>
+		<h2 class="content__sidebar__block__header"></h2>	
+        </div>
+
+      </sidebar>
+    </sidebar>
+    <!-- END Sidebar  -->
+                                
+        
+                                <!-- CONTENT -->
+      <div class="content__about">
+          <div class="teacher__details">
+          <!-- {% for c in cath  %} --> {% endfor %}
+          <h1 class="header-with-line">
+            <!-- {{c.title}} Personal page-->
+			  Вітаю на моїй персональній сторінці!
+          </h1>
+			<!-- Everything here will be extracted from database. Use loop for each person in a row-->  
+			<div class="person__row"> 
+				<div class="person__wrapper__personal">
+					<div class="person__avatar__personal">
+					<img src="http://acts.kpi.ua/app/uploads/2015/07/Теленик.jpg"> 
+					</div>
+					
+					<div class="person__name">
+						Теленик Сергій Федорович
+					</div>
+					
+					<div class="person__position">
+						ЗАВІДУВАЧ КАФЕДРИ голова НМК МОН України "Автоматика та управління" керівник циклу математичних дисциплін д.т.н., професор
+					</div>
+					
+				</div>
+			</div>
+			  
+			  <div class="details">
+				  <h1 class="header-with-line">Дисципліни</h1>
+				  <ul class="person__subject">
+					  <li class="person__subject__li">Дискретний аналіз</li>
+					  <li class="person__subject__li">комп’ютерна лінгвістика</li>
+					  <li class="person__subject__li">програмування в абстрактних середовищах об’єктів</li>
+					  <li class="person__subject__li">проектування систем штучного інтелекту</li>
+					  <li class="person__subject__li">математична логіка</li>
+					  <li class="person__subject__li">теорія алгоритмів</li>
+				  </ul>
+			  </div>				  
+			  
+			  <div class="details">
+			  <h1 class="header-with-line">Сфера наукових інтересів</h1>
+			  <ul class="person__interests">
+			  	  <li class="person__interests__li">Розроблення інформаційних технологій</li>
+				  <li class="person__interests__li">Розроблення моделей і методів управління ІТ-інфраструктурою</li>
+				  <li class="person__interests__li">Автоматизація проектування і програмування</li>
+				  <li class="person__interests__li">Математична логіка</li>
+				  <li class="person__interests__li">Комп’ютерна лінгвістика</li>
+				  <li class="person__interests__li">Штучний інтелект</li>
+			  </ul>
+			</div>	
+		  	
+			<div class="works" id="works">
+		  		<h1 class="header-with-line">Публікації:</h1>
+				<ul class="person__works">
+					<li class="person__works__li">З напрямку <a href="http://acts.kpi.ua/uk-ua/Home/article/pybl_IT_infr"><strong>” Управління ІТ – інфраструктурою”</strong></a></li>
+				</ul>
+		  	</div> 
+			  
+			<div class="personal__blog" id="personalblog">
+			<h1 class="header-with-line">Особистий блог:</h1>
+				<section>
+				  <!-- {% for a in articles  %} -->
+				  <h1>
+					<!-- {{a.title}} article's title-->
+					  Lorem ipsum
+				  </h1>
+				  <!-- Picture from DB
+				  <div class="section__image" style="
+				  background-image: url('{{a.img_field}}')"></div> -->
+				  <div class="section__image" style="
+				  background-image: url('http://1tv.com.ua/uploads/cover/2015/05/12/f43f947194f1ee5aac8f5cce122d653a.jpg')"></div>  
+				  <p>
+				   <!-- {{a.description}} The content of article -->
+		Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. 
+				  </p>						   		 
+			    </section>
+				<span class="blog__news__date">
+				   <!-- {{a.published_date}} -->  01/01/2013
+				</span> 
+				
+				<span class="buttons">
+					<form method="get" action="" class="admin__buttons">
+						<input type="button" class="edit__button">
+						<input type="button" class="remove__button">
+					</form>	
+				</span>
+				
+			<!-- {% endfor %} -->	
+		  </div>
+		</div>	  
+	</div> 						
+</div>	
+        						<!-- END Content -->
+        
+                                <!-- FOOTER -->
+    
+    <footer class="footer">
+      <div class="footer__left">
+        <h1>Нашi партнери</h1>
+        <div class="prtners">
+          <a href="http://microsoft.com" target="_blank">
+            <img src="img/microsoft.png" alt="">
+          </a>
+          <a href="http://www.ti.com" target="_blank">
+            <img src="img/texas.png" alt="">
+          </a>
+          <a href="http://www.cisco.com" target="_blank">
+            <img src="img/cisco.png" alt="">
+          </a>
+          <a href="http://www.atmel.com" target="_blank">
+            <img src="img/atmel.png" alt="">
+          </a>
+        </div>
+      
+                                <!-- Contacts -->
+      <div class="footer__contacts">
+        <p>
+          &copy; ACTS | +380 (44) 204 86 10 | +380 (44) 204 92 85 | kafedra@acts.kpi.ua 
+        </p>
+      </div>
+    </footer>
+                                <!-- END Contacts -->
+
+    							<!-- END Footer -->
+    
+ 
+<script src="js/script.js"></script>    
+</body>
+</html>

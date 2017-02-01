@@ -1,0 +1,282 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>Педагогічний склад</title> <!-- c.page_title (for example) -->
+    <html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <link rel="stylesheet" href="{% static  'css/index.css'%}">
+  <link rel="stylesheet" href="{% static 'css/font-awesome.min.css'%}">
+  <link rel="icon" href="{% static 'img/favicon.ico' %}">
+</head>
+<body>
+    <div class="wrapper">
+             
+                                <!-- HEADER -->
+    <div class="header">
+      <div class="row">
+        <menu class="header__menu">
+          <ul>
+            <a href="http://127.0.0.1:8000/" class="header__menu__a_logo">
+              <img class="header__menu__logo" src="{% static 'img/logo.png'%}">
+            </a>
+          </ul>
+          <ul>
+            <a href="">Абітурієнтам</a>
+          </ul>
+          <ul>
+            <a href="">Студентам</a>
+          </ul>
+          <ul>
+            <a href="">Розробки</a>
+          </ul>
+            <ul>
+            <a href="">Наука</a>
+          </ul>
+        </menu>
+        <div class="header__right medium-2 columns search__wrapper out">
+          <li class="ul langs">
+            <ul><a href='/?lang=ua' class="lang__active">ua</a></ul>
+            <ul><a href='/?lang=en'>en</a></ul>
+          </li>
+            
+                                <!-- Search area -->
+          <form method="get" action="" class="header__search">
+            <input type="text" class="input_text" name="search">
+            <input type="submit" class="header__search__button">
+			<a href="authorization.html" title="Авторизація"><input type="button" class="header__login__button"></a>   
+          </form>
+        </div>
+      </div>
+    </div>
+    							<!-- END Header -->
+      
+     
+      
+                                <!-- BODY START -->
+    <!-- Sidebar -->
+    <div class="content row medium-9 columns teacher__staff">     
+    <!-- Social Networks -->
+        
+    <sidebar class="content__sidebar">
+        <div class="social__holder">
+            
+          <h2 class="content__sidebar__block__header">Ми у соціальних мережах</h2>
+            <ul>
+                <li><a class="w3-btn w3-indigo w3-round-medium" href="https://www.facebook.com/actskpi" target="_blank">Facebook</a></li>
+                <li><a class="w3-btn w3-blue-grey w3-round-medium" href="https://vk.com/actskpi" target="_blank">VK</a></li>
+           </ul>
+        </div>    
+                            
+                                <!-- INFORMATION -->   
+      <sidebar class="content__sidebar">
+        <div class="content__sidebar__block ">
+          <h2 class="content__sidebar__block__header">Інформація</h2>
+          <ul class="sidebar__nav">
+            <li>
+              <a href="http://127.0.0.1:8000/index/about/" class="sidebar__nav__btn">Про кафедру</a>
+            </li>
+            <li>
+              <a href="" class="sidebar__nav__btn">Історія кафедри</a>
+            </li>
+            <li>
+              <a href="http://127.0.0.1:8000/index/teacherstaff/" class="sidebar__nav__btn">Педагогічний склад</a>
+            </li>
+            <li>
+              <a href="" class="sidebar__nav__btn">Допоміжний персонал</a>
+            </li>
+            <li>
+              <a href="" class="sidebar__nav__btn">Студентське життя</a>
+            </li>
+            <li>
+              <a href="" class="sidebar__nav__btn">Вступнику 2017-го</a>
+            </li>  
+          </ul>
+        </div>
+
+      <div class="content__sidebar__block">
+          <h2 class="content__sidebar__block__header ">Контакти</h2>
+          <table class="sidebar__contacts" cellspacing="0">
+            <tbody>
+              <!-- Contact -->
+              <tr>
+                <td>
+                  <span class="sidebar__contacts__icon">
+                    <img src="{% static 'img/home.png'%}">
+                  </span>
+                </td>
+                <td>
+                  <span class="span">
+                    Місто Київ, проспект Перемоги 37, 18 корпус
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="sidebar__contacts__icon">
+                    <img src="{% static 'img/phone.png'%}">
+                  </span>
+                </td>
+                <td>
+                  <span class="span">
+                    +380 (44) 204 86 10<br>
+                    +380 (44) 204 92 85
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="sidebar__contacts__icon">
+                    <img src="{% static 'img/at.png'%}">
+                  </span>
+                </td>
+                <td>
+                  <span class="span">
+                    kafedra@acts.kpi.ua
+                  </span>
+                </td>
+              </tr>
+              <!-- End Contact -->
+            </tbody>
+          </table>
+        </div>
+
+        <div class="content__sidebar__block">
+          <h2 class="content__sidebar__block__header">Останні новини</h2>
+          <div class="sidebar__news">
+              
+                                <!-- NEWS -->
+            {% for new in news %}
+            <a class="sidebar__news__news" href="">
+              <h3 class="sidebar__news__news__header">
+                {{ new.title }}
+              </h3>
+              <span class="sidebar__news__news__date">{{ new.published_date }}</span>
+            </a>     
+            {% endfor %}
+          </div>
+                                <!-- END News -->
+        </div>
+
+      </sidebar>
+    </sidebar>
+    <!-- END Sidebar  -->
+                                
+        
+                                <!-- CONTENT -->
+      <div class="content__about">
+          <div class="teacher">
+          <!-- {% for c in cath  %} --> {% endfor %}
+          <h1 class="header-with-line">
+            <!-- {{c.title}} -->
+              Педагогічний склад
+          </h1>
+			<!-- Everything here will be extracted from database. Use loop for each person in a row-->
+
+			<div class="person__row">
+				<div class="person__wrapper">
+					<div class="person__avatar">
+					<img src="http://acts.kpi.ua/app/uploads/2015/07/%D0%A2%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%BA.jpg">
+					</div>
+					
+					<div class="person__name">
+						Теленик Сергій Федорович
+					</div>
+					
+					<div class="person__position">
+						ЗАВІДУВАЧ КАФЕДРИ голова НМК МОН України "Автоматика та управління" керівник циклу математичних дисциплін д.т.н., професор
+					</div>
+					
+					<div class="person__links">
+						<a class="w3-btn w3-ripple w3-blue-grey w3-round-small" href="personabout.html" target="_blank">Детальніше</a>
+					</div>
+					
+				</div>
+			</div>
+
+			<div class="person__row">
+				<div class="person__wrapper">
+					<div class="person__avatar">
+					<img src="http://acts.kpi.ua/app/uploads/2015/07/Новацкий.jpg">
+					</div>
+
+					<div class="person__name">
+						Новацький Анатолій Олександрович
+					</div>
+
+					<div class="person__position">
+						ПЕРШИЙ ЗАСТУПНИК заступник з навчально-виховної роботи відповідальний за заочну форму навчання керівник циклу "Комп'ютерна електроніка та мікропроцесорна техніка" к.т.н., доцент
+					</div>
+
+					<div class="person__links">
+						<a class="w3-btn w3-ripple w3-blue-grey w3-round-small" href="#" target="_blank">Детальніше</a>
+					</div>
+
+				</div>
+			</div>
+            {%   for teacher in teachers %}
+			<div class="person__row">
+			<div class="person__wrapper__l">
+				<div class="person__avatar">
+					<img src="{{ teacher.img_field }}">
+					</div>
+
+					<div class="person__name">
+						{{ teacher.full_name }}
+					</div>
+
+					<div class="person__position">
+						{{ teacher.short_about }}
+					</div>
+
+					<div class="person__links">
+						<a class="w3-btn w3-ripple w3-blue-grey w3-round-small" href="#" target="_blank">Детальніше</a>
+					</div>
+			</div>
+
+            {% endfor %}
+			</div>  
+
+		  </div>
+		</div> 						
+		
+		</div>
+        						<!-- END Content -->
+        
+                                <!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="footer__left">
+        <h1>Нашi партнери</h1>
+        <div class="prtners">
+          <a href="http://microsoft.com" target="_blank">
+            <img src="{% static 'img/microsoft.png'%}" alt="">
+          </a>
+          <a href="http://www.ti.com" target="_blank">
+            <img src="{% static 'img/texas.png'%}" alt="">
+          </a>
+          <a href="http://www.cisco.com" target="_blank">
+            <img src="{% static 'img/cisco.png'%}" alt="">
+          </a>
+          <a href="http://www.atmel.com" target="_blank">
+            <img src="{% static 'img/atmel.png'%}" alt="">
+          </a>
+        </div>
+
+                                <!-- Contacts -->
+      <div class="footer__contacts">
+        <p>
+          &copy; ACTS | +380 (44) 204 86 10 | +380 (44) 204 92 85 | kafedra@acts.kpi.ua
+        </p>
+      </div>
+    </footer>
+                                <!-- END Contacts -->
+
+    							<!-- END Footer -->
+
+
+<script src="{% static 'js/script.js'%}"></script>
+</body>
+</html>
